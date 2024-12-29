@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Age Assignment</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border: 2px solid black;
+        border-width: 10px;
+        height: 300px;
+        width: 300px;
+        padding: 50px;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .error {
+        color: red;
+        font-size: 40px;
+      }
+      .result {
+        margin-top: 20px;
+        font-size: 50px;
+      }
+      h1 {
+        background-color: lightgreen;
+        font-size: 40px;
+      }
+      button {
+        background-color: lightblue;
+        padding: 10px;
+        border-radius: 10px;
+        border: darkblue solid 2px;
+      }
+      button:active {
+        background-color: darkgreen;
+        border: lightgreen solid 2px;
+      }
+      label {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>API AGE ASSIGNMENT</h1>
+      <form id="ageForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <div id="nameError" class="error"></div>
+        <br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <div id="emailError" class="error"></div>
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
